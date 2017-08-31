@@ -1,0 +1,77 @@
+﻿@using eSKImo.Models
+@model EmailModel
+@{
+    ViewBag.Title = "Email";
+
+}
+
+<style type="text/css">
+    .bs-example {
+        padding-left:10px;
+        padding-right:10px;
+        height : 10px;
+        min-width:70% !important;
+    }
+    /* Fix alignment issue of label on extra small devices in Bootstrap 3.2 */
+    .form-horizontal .control-label {
+        padding-top: 7px;
+    }
+
+ .bs-example input{
+     min-width:60%;
+     min-height:35px;
+ }
+
+</style>
+
+
+
+<div class="container">
+    <div class="jumbotron">
+        @using (Html.BeginForm("Email", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <br />
+            <center>
+                <p style="font-size:1cm; font-family:'Courier New'">
+                    Drop your email down here
+                </p>
+            </center>
+            <div class="bs-example" style="text-align:center">
+                <div class="form-inline" role="form" style="text-align:center ">
+                    <label class="sr-only" for="inputEmail" style="text-align:center ; ">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" />
+                </div>
+            </div>
+            <!--<center>
+                @Html.TextBoxFor(m => m.EmailAddress)
+            </center>
+            -->
+            <br />
+            <br />
+        }
+    </div>
+
+    <div class="row" style="text-align:center">
+        <div class="col-lg-6">
+            <h2>
+                Pre-order 
+                <br />
+                <small>
+                    By insertiong your email you are signing up on our pre-oreder list , which we shall honor the moment we are going to produce the first batch of eSKImo Knee Bracers
+                </small>
+            </h2>
+        </div>
+        
+        <div class="col-lg-6">
+            <h2>
+                50% off
+                <br />
+                <small>
+                    By signing up you will get your first Knee Brace for half the price 
+                </small>
+            </h2>
+        </div>
+    </div>
+</div>
+

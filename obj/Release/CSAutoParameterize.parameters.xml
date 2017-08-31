@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-eSKImo-20150403011311.mdf;Initial Catalog=aspnet-eSKImo-20150403011311;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\cristof\\documents\\visual\ studio\ 2015\\Projects\\eSKImo\\eSKImo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="MessageDBContext-Web.config Connection String" description="MessageDBContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Movies.mdf;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\cristof\\documents\\visual\ studio\ 2015\\Projects\\eSKImo\\eSKImo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MessageDBContext']/@connectionString" />
+  </parameter>
+  <parameter name="UsersEntities-Web.config Connection String" description="UsersEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/User.csdl|res://*/User.ssdl|res://*/User.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.\SQLEXPRESS;initial catalog=Users;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\cristof\\documents\\visual\ studio\ 2015\\Projects\\eSKImo\\eSKImo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UsersEntities']/@connectionString" />
+  </parameter>
+  <parameter name="UsersEntity-Web.config Connection String" description="UsersEntity Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.User.csdl|res://*/Models.User.ssdl|res://*/Models.User.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.\SQLEXPRESS;initial catalog=Users;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\cristof\\documents\\visual\ studio\ 2015\\Projects\\eSKImo\\eSKImo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UsersEntity']/@connectionString" />
+  </parameter>
+  <parameter name="eSKImo.Models.SubscriptionDBContext-Web.config Connection String" description="eSKImo.Models.SubscriptionDBContext Connection String used in web.config by the application to access the database." defaultValue="eSKImo.Models.SubscriptionDBContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\cristof\\documents\\visual\ studio\ 2015\\Projects\\eSKImo\\eSKImo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='eSKImo.Models.SubscriptionDBContext']/@connectionString" />
+  </parameter>
+</parameters>
